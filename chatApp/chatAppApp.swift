@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct chatAppApp: App {
+    var authentifcation = FirebaseManager.shared
     var body: some Scene {
         WindowGroup {
             ContentView()
