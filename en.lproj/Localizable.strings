@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  chatApp
+
+  Created by Djino Dissingar on 25/04/2022.
+  
+*/
+"INFOS" = "Informations";
+"APP_SETTINGS" = "Apps Settings";
+"SETTINGS" = "Settings";
+"ACCOUNT" = "Choose your account ?";
+"SIGNIN" = "Sign In";
+"SIGNUP" = "Sign Up";
+"ENTER_NAME" = "Enter your name";
+"ENTER_PASSWORD" = "Enter your password";
+"ENTER_MAIL" = "Enter your mail";
+"ENTER_LASTNAME" = "Enter your last name";
+"VALIDATE" = "Validate";

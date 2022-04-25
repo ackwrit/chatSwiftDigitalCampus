@@ -19,21 +19,21 @@ struct LoginView: View {
             ScrollView{
                 VStack{
                     
-                    Picker("Choix de compte", selection: $tag) {
-                        Text("Connexion").tag(0)
-                        Text("Inscription").tag(1)
+                    Picker("ACCOUNT", selection: $tag) {
+                        Text("SIGNUP").tag(0)
+                        Text("SIGNIN").tag(1)
                     }
                     .pickerStyle(.segmented)
                     VStack{
                         if(tag == 1){
-                            TextField("Entrer votre prénom", text: $name)
+                            TextField("ENTER_NAME", text: $name)
                                 .textFieldStyle(.roundedBorder)
-                            TextField("Entrer votre nom", text: $lastName)
+                            TextField("ENTER_LASTNAME", text: $lastName)
                                 .textFieldStyle(.roundedBorder)
                         }
-                        TextField("Entrer votre mail", text: $mail)
+                        TextField("ENTER_MAIL", text: $mail)
                             .textFieldStyle(.roundedBorder)
-                        SecureField("Entrer votre mot de passe", text: $password)
+                        SecureField("ENTER_PASSWORD", text: $password)
                             .textFieldStyle(.roundedBorder)
                         Button {
                             if(tag==0){
@@ -43,7 +43,7 @@ struct LoginView: View {
                                 authVm.signUp(name: name, lastName: lastName, mail: mail, password: password)
                             }
                         } label: {
-                            Text("Valider")
+                            Text("VALIDATE")
                         }
                         .padding()
                         .background(Color.indigo)

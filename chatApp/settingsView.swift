@@ -34,7 +34,7 @@ struct settingsView: View {
                 
                 Divider()
                 List {
-                    Section("Infos") {
+                    Section("INFOS") {
                        
 
                         // Changement de nom
@@ -78,13 +78,13 @@ struct settingsView: View {
                         }
                       
                     }
-                    Section("Réglages App") {
+                    Section("APP_SETTINGS") {
                         settingsRow(imageName: "paperplane", title: "Envoi", color: .purple
                         )
                         settingsRow(imageName: "bell", title: "Notifications", color: .red)
                         settingsRow(imageName: "shield", title: "Confidentialité", color: .green)
                     }
-                    Section("Paramètres") {
+                    Section("SETTINGS") {
                         settingsRow(imageName: "doc", title: "Mentions Légales", color: .gray)
                         settingsRow(imageName: "gear", title: "Paramètres du compte", color: .gray)
                         settingsRow(imageName: "questionMark", title: "Aides", color: .blue)

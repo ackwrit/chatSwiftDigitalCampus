@@ -9,7 +9,7 @@ import SwiftUI
 
 struct settingsRow: View {
     var imageName : String
-    var title : String
+    var title : LocalizedStringKey
     var color : Color
     var body: some View {
         NavigationLink {
