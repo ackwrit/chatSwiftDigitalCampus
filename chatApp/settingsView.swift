@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct settingsView: View {
+    @StateObject var userVm : UserViewModel
     var body: some View {
         NavigationView {
             VStack {
@@ -22,7 +23,7 @@ struct settingsView: View {
                     }
                     HStack {
                         Spacer(minLength: 80)
-                        Text("Ici on va indiquer le nom de l'utilisateur")
+                        Text(userVm.user?.fullName ?? "")
                     }
                     .frame(height:40)
                     Avatar(size: 80)
@@ -61,6 +62,6 @@ struct settingsView: View {
 
 struct settingsView_Previews: PreviewProvider {
     static var previews: some View {
-        settingsView()
+        settingsView(userVm: UserViewModel.init(id: FirebaseManager.shared.myId()))
     }
 }

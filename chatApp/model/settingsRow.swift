@@ -13,7 +13,19 @@ struct settingsRow: View {
     var color : Color
     var body: some View {
         NavigationLink {
-            Text(title)
+            if(imageName == "lock.shield")
+            {
+                Button {
+                    FirebaseManager.shared.logOut()
+                } label: {
+                    Text("Cliquer ici pour vous déconnecter")
+                }
+
+            }
+            else{
+                Text(title)
+            }
+            
         } label: {
             HStack {
                 Image(systemName: imageName)

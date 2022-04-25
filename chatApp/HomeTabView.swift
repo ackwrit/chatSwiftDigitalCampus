@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    @StateObject var userVm : UserViewModel = UserViewModel.init(id: FirebaseManager.shared.myId())
+    
     @State var index : Int = 0
     var body: some View {
         TabView(selection: $index) {
@@ -20,7 +22,7 @@ struct HomeTabView: View {
                 Image(systemName: "person.circle.fill")
             }.tag(1)
             
-            settingsView().tabItem {
+            settingsView(userVm: userVm).tabItem {
                 Text("Réglages")
                 Image(systemName: "gear")
             }.tag(2)

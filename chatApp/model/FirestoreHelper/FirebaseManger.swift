@@ -22,6 +22,8 @@ class FirebaseManager {
         return cloudFirestore.collection(USERS)
     }
     
+  
+    
     
     
     
@@ -39,6 +41,21 @@ class FirebaseManager {
     func createUserFirebase(uid : String, datas : [String:Any]){
         let doc = userRef.document(uid)
         doc.setData(datas)
+    }
+    
+    
+    //Se deconnecter de l'application
+    func logOut(){
+        do {
+            try auth.signOut()
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func myId() -> String{
+        return auth.currentUser?.uid ?? ""
     }
     
    

@@ -24,6 +24,8 @@
 		F65B2E042816895000DB42A3 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E032816894F00DB42A3 /* Avatar.swift */; };
 		F65B2E06281689DB00DB42A3 /* RemplcamentAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */; };
 		F65B2E082816908600DB42A3 /* settingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E072816908500DB42A3 /* settingsRow.swift */; };
+		F65B2E0C28169D6B00DB42A3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E0B28169D6B00DB42A3 /* UserViewModel.swift */; };
+		F65B2E0E28169E3C00DB42A3 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E0D28169E3C00DB42A3 /* AppUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F65B2E032816894F00DB42A3 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemplcamentAvatar.swift; sourceTree = "<group>"; };
 		F65B2E072816908500DB42A3 /* settingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsRow.swift; sourceTree = "<group>"; };
+		F65B2E0B28169D6B00DB42A3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F65B2E0D28169E3C00DB42A3 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				F65B2E032816894F00DB42A3 /* Avatar.swift */,
 				F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */,
 				F65B2E072816908500DB42A3 /* settingsRow.swift */,
+				F65B2E0D28169E3C00DB42A3 /* AppUser.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F6318251280EDECC00A8E1D0 /* authViewModel.swift */,
+				F65B2E0B28169D6B00DB42A3 /* UserViewModel.swift */,
 			);
 			path = modelView;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65B2DFE28167E3300DB42A3 /* LoginView.swift in Sources */,
+				F65B2E0E28169E3C00DB42A3 /* AppUser.swift in Sources */,
+				F65B2E0C28169D6B00DB42A3 /* UserViewModel.swift in Sources */,
 				F65B2E022816837700DB42A3 /* settingsView.swift in Sources */,
 				F6318252280EDECC00A8E1D0 /* authViewModel.swift in Sources */,
 				F65B2E042816895000DB42A3 /* Avatar.swift in Sources */,
