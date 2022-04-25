@@ -18,6 +18,12 @@
 		F631824F280EDC7600A8E1D0 /* FirebaseManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F631824E280EDC7600A8E1D0 /* FirebaseManger.swift */; };
 		F6318252280EDECC00A8E1D0 /* authViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318251280EDECC00A8E1D0 /* authViewModel.swift */; };
 		F6318254280F014200A8E1D0 /* FirebaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318253280F014200A8E1D0 /* FirebaseConstant.swift */; };
+		F65B2DFE28167E3300DB42A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2DFD28167E3300DB42A3 /* LoginView.swift */; };
+		F65B2E002816818500DB42A3 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2DFF2816818500DB42A3 /* HomeTabView.swift */; };
+		F65B2E022816837700DB42A3 /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E012816837700DB42A3 /* settingsView.swift */; };
+		F65B2E042816895000DB42A3 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E032816894F00DB42A3 /* Avatar.swift */; };
+		F65B2E06281689DB00DB42A3 /* RemplcamentAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */; };
+		F65B2E082816908600DB42A3 /* settingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E072816908500DB42A3 /* settingsRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		F631824E280EDC7600A8E1D0 /* FirebaseManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManger.swift; sourceTree = "<group>"; };
 		F6318251280EDECC00A8E1D0 /* authViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authViewModel.swift; sourceTree = "<group>"; };
 		F6318253280F014200A8E1D0 /* FirebaseConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstant.swift; sourceTree = "<group>"; };
+		F65B2DFD28167E3300DB42A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F65B2DFF2816818500DB42A3 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		F65B2E012816837700DB42A3 /* settingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
+		F65B2E032816894F00DB42A3 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemplcamentAvatar.swift; sourceTree = "<group>"; };
+		F65B2E072816908500DB42A3 /* settingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,9 @@
 				F631824C280EDC2000A8E1D0 /* model */,
 				F6318243280EDA9200A8E1D0 /* GoogleService-Info.plist */,
 				F6318235280ED81E00A8E1D0 /* chatAppApp.swift */,
+				F65B2DFF2816818500DB42A3 /* HomeTabView.swift */,
+				F65B2DFD28167E3300DB42A3 /* LoginView.swift */,
+				F65B2E012816837700DB42A3 /* settingsView.swift */,
 				F6318237280ED81E00A8E1D0 /* ContentView.swift */,
 				F6318239280ED82100A8E1D0 /* Assets.xcassets */,
 				F631823B280ED82100A8E1D0 /* Preview Content */,
@@ -88,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				F631824D280EDC4A00A8E1D0 /* FirestoreHelper */,
+				F65B2E032816894F00DB42A3 /* Avatar.swift */,
+				F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */,
+				F65B2E072816908500DB42A3 /* settingsRow.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -188,9 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65B2DFE28167E3300DB42A3 /* LoginView.swift in Sources */,
+				F65B2E022816837700DB42A3 /* settingsView.swift in Sources */,
 				F6318252280EDECC00A8E1D0 /* authViewModel.swift in Sources */,
+				F65B2E042816895000DB42A3 /* Avatar.swift in Sources */,
 				F6318238280ED81E00A8E1D0 /* ContentView.swift in Sources */,
 				F6318236280ED81E00A8E1D0 /* chatAppApp.swift in Sources */,
+				F65B2E002816818500DB42A3 /* HomeTabView.swift in Sources */,
+				F65B2E082816908600DB42A3 /* settingsRow.swift in Sources */,
+				F65B2E06281689DB00DB42A3 /* RemplcamentAvatar.swift in Sources */,
 				F631824F280EDC7600A8E1D0 /* FirebaseManger.swift in Sources */,
 				F6318254280F014200A8E1D0 /* FirebaseConstant.swift in Sources */,
 			);

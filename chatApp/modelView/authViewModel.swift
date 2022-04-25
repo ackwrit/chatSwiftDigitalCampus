@@ -70,9 +70,9 @@ class AuthViewModel : ObservableObject {
         guard checkValue(mail, value: "votre mail") else {return }
         guard checkValue(password, value: "votre mot de passe") else {return }
         datas = [
-            "EMAIL": mail,
-            "NOM" : lastName,
-            "PRENOM" : name
+            MAIL : mail,
+            LASTNAME : lastName,
+            NAME : name
         ]
         auth.createUser(withEmail: mail, password: password,completion: completionAuth)
         //Ajouter dans la base de donnée

@@ -39,7 +39,7 @@ class FirebaseManager {
     func createUserFirebase(uid : String, datas : [String:Any]){
         let doc = userRef.document(uid)
         doc.setData(datas)
-        
-        
     }
+    
+   
 }

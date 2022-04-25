@@ -8,3 +8,6 @@
 import Foundation
 
 let USERS = "Users"
+let NAME = "PRENOM"
+let LASTNAME = "NOM"
+let MAIL = "EMAIL"
