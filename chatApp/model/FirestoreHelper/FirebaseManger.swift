@@ -44,6 +44,14 @@ class FirebaseManager {
     }
     
     
+    //Mise à jour des informations de l'utilisateur
+    func UpdateUserFirebase( uid : String , datas:[String:Any]){
+        let doc = userRef.document(uid)
+        doc.updateData(datas)
+        
+    }
+    
+    
     //Se deconnecter de l'application
     func logOut(){
         do {

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct settingsView: View {
     @StateObject var userVm : UserViewModel
+    @State var nom : String = ""
+    @State var prenom : String = ""
     var body: some View {
         NavigationView {
             VStack {
@@ -33,6 +35,47 @@ struct settingsView: View {
                 Divider()
                 List {
                     Section("Infos") {
+                       
+
+                        // Changement de nom
+                        HStack{
+                            TextField(userVm.user?.lastName ?? "", text: $nom)
+                                .textFieldStyle(.roundedBorder)
+                            Spacer()
+                            Button {
+                                if(nom != ""){
+                                    let dict :[String:Any] = [LASTNAME : nom]
+                                    FirebaseManager.shared.UpdateUserFirebase(uid:userVm.user?.id ?? "", datas: dict)
+                                    self.nom = ""
+                                    
+                                }
+                                
+                                
+                                
+                            } label: {
+                                Image(systemName: "plus")
+                            }
+
+                            
+                        }
+                       
+                        //Changement de prénom
+                        HStack {
+                            TextField(userVm.user?.name ?? "", text: $prenom)
+                                .textFieldStyle(.roundedBorder)
+                            Spacer()
+                            Button {
+                                if(prenom != ""){
+                                    let dict :[String:Any] = [NAME : prenom]
+                                    FirebaseManager.shared.UpdateUserFirebase(uid:userVm.user?.id ?? "", datas: dict)
+                                    self.prenom = ""
+                                    
+                                }
+
+                            } label: {
+                                Image(systemName: "plus")
+                            }
+                        }
                       
                     }
                     Section("Réglages App") {
