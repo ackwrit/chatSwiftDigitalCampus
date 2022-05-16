@@ -16,3 +16,14 @@
 "ENTER_MAIL" = "Entrer votre mail";
 "ENTER_LASTNAME" = "Entrer votre nom";
 "VALIDATE" = "Validation";
+"WAIT" = "En attente de connexion";
+"SEND" = "Envoi";
+"NOTIF" = "Notifications";
+"CONFIDENTIAL" = "Confidentialité";
+"LEGAL" = "Mentions Légales";
+"ACCOUNT_SETTINGS" = "Paramètres du compte";
+"HELP" = "Aides";
+"LOG_OUT" = "Se déconnecter";
+"CHANGE_IMAGE" = "Changer l'image";
+"LIB" = "Librairie";
+"CAMERA" = "Caméra";

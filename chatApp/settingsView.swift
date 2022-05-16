@@ -28,7 +28,7 @@ struct settingsView: View {
                         Text(userVm.user?.fullName ?? "")
                     }
                     .frame(height:40)
-                    Avatar(size: 80)
+                    Avatar(user : userVm.user ,size: 80)
                         .padding(.horizontal)
                 }
                 
@@ -79,16 +79,16 @@ struct settingsView: View {
                       
                     }
                     Section("APP_SETTINGS") {
-                        settingsRow(imageName: "paperplane", title: "Envoi", color: .purple
+                        settingsRow(imageName: "paperplane", title: "SEND", color: .purple
                         )
-                        settingsRow(imageName: "bell", title: "Notifications", color: .red)
-                        settingsRow(imageName: "shield", title: "Confidentialité", color: .green)
+                        settingsRow(imageName: "bell", title: "NOTIF", color: .red)
+                        settingsRow(imageName: "shield", title: "CONFIDENTIAL", color: .green)
                     }
                     Section("SETTINGS") {
-                        settingsRow(imageName: "doc", title: "Mentions Légales", color: .gray)
-                        settingsRow(imageName: "gear", title: "Paramètres du compte", color: .gray)
-                        settingsRow(imageName: "questionMark", title: "Aides", color: .blue)
-                        settingsRow(imageName: "lock.shield", title: "Se déconnecter", color: .red)
+                        settingsRow(imageName: "doc", title: "LEGAL", color: .gray)
+                        settingsRow(imageName: "gear", title: "ACCOUNT_SETTINGS", color: .gray)
+                        settingsRow(imageName: "questionMark", title: "HELP", color: .blue)
+                        settingsRow(imageName: "lock.shield", title: "LOG_OUT", color: .red)
                         
                     }
                 }

@@ -21,7 +21,9 @@ class FirebaseManager {
     var userRef : CollectionReference {
         return cloudFirestore.collection(USERS)
     }
-    
+    var messageRef : CollectionReference {
+        return cloudFirestore.collection(MESSAGE)
+    }
   
     
     
@@ -64,6 +66,22 @@ class FirebaseManager {
     
     func myId() -> String{
         return auth.currentUser?.uid ?? ""
+    }
+    
+    
+    func setupPath(exp: String ,dest : String) -> CollectionReference {
+        let array = [exp,dest]
+        let sortArray = array.sorted(by: {$0<$1})
+        let first = sortArray[0]
+        let second = sortArray[1]
+        let ref = messageRef.document(first).collection(second)
+        return ref
+        
+    }
+    
+    func sendMessage(exp : String,dest : String ,datas : [String:Any]){
+        let newDoc = setupPath(exp: exp, dest: dest).document()
+        newDoc.setData(datas)
     }
     
    

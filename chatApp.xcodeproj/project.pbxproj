@@ -29,6 +29,13 @@
 		F65B2E082816908600DB42A3 /* settingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E072816908500DB42A3 /* settingsRow.swift */; };
 		F65B2E0C28169D6B00DB42A3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E0B28169D6B00DB42A3 /* UserViewModel.swift */; };
 		F65B2E0E28169E3C00DB42A3 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B2E0D28169E3C00DB42A3 /* AppUser.swift */; };
+		F67A377B282A46AA002F25DA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67A377A282A46AA002F25DA /* Message.swift */; };
+		F67A377D282A498F002F25DA /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67A377C282A498F002F25DA /* MessageViewModel.swift */; };
+		F67A377F282A5224002F25DA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67A377E282A5224002F25DA /* ChatMessage.swift */; };
+		F69E44B2282A637D0002A42D /* MessageEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69E44B1282A637D0002A42D /* MessageEditing.swift */; };
+		F6A4B9652817EDD40032D6CB /* AllUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B9642817EDD40032D6CB /* AllUsersViewModel.swift */; };
+		F6A4B9672817F56A0032D6CB /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B9662817F56A0032D6CB /* ContactListView.swift */; };
+		F6A4B9692817FC640032D6CB /* ContactViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B9682817FC640032D6CB /* ContactViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +60,14 @@
 		F65B2E072816908500DB42A3 /* settingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsRow.swift; sourceTree = "<group>"; };
 		F65B2E0B28169D6B00DB42A3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F65B2E0D28169E3C00DB42A3 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		F67A377A282A46AA002F25DA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F67A377C282A498F002F25DA /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		F67A377E282A5224002F25DA /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F69E44B1282A637D0002A42D /* MessageEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEditing.swift; sourceTree = "<group>"; };
+		F6A4B9632817E72D0032D6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6A4B9642817EDD40032D6CB /* AllUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersViewModel.swift; sourceTree = "<group>"; };
+		F6A4B9662817F56A0032D6CB /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		F6A4B9682817FC640032D6CB /* ContactViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,7 @@
 		F6318234280ED81E00A8E1D0 /* chatApp */ = {
 			isa = PBXGroup;
 			children = (
+				F6A4B9632817E72D0032D6CB /* Info.plist */,
 				F6477C332816E1350055D800 /* Reprsentable */,
 				F6318250280EDDDF00A8E1D0 /* modelView */,
 				F631824C280EDC2000A8E1D0 /* model */,
@@ -96,7 +112,11 @@
 				F6318235280ED81E00A8E1D0 /* chatAppApp.swift */,
 				F65B2DFF2816818500DB42A3 /* HomeTabView.swift */,
 				F65B2DFD28167E3300DB42A3 /* LoginView.swift */,
+				F6A4B9662817F56A0032D6CB /* ContactListView.swift */,
 				F65B2E012816837700DB42A3 /* settingsView.swift */,
+				F67A377E282A5224002F25DA /* ChatMessage.swift */,
+				F6A4B9682817FC640032D6CB /* ContactViewRow.swift */,
+				F69E44B1282A637D0002A42D /* MessageEditing.swift */,
 				F6318237280ED81E00A8E1D0 /* ContentView.swift */,
 				F6318239280ED82100A8E1D0 /* Assets.xcassets */,
 				F631823B280ED82100A8E1D0 /* Preview Content */,
@@ -120,6 +140,7 @@
 				F65B2E05281689DB00DB42A3 /* RemplcamentAvatar.swift */,
 				F65B2E072816908500DB42A3 /* settingsRow.swift */,
 				F65B2E0D28169E3C00DB42A3 /* AppUser.swift */,
+				F67A377A282A46AA002F25DA /* Message.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -138,6 +159,8 @@
 			children = (
 				F6318251280EDECC00A8E1D0 /* authViewModel.swift */,
 				F65B2E0B28169D6B00DB42A3 /* UserViewModel.swift */,
+				F6A4B9642817EDD40032D6CB /* AllUsersViewModel.swift */,
+				F67A377C282A498F002F25DA /* MessageViewModel.swift */,
 			);
 			path = modelView;
 			sourceTree = "<group>";
@@ -232,18 +255,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67A377F282A5224002F25DA /* ChatMessage.swift in Sources */,
 				F65B2DFE28167E3300DB42A3 /* LoginView.swift in Sources */,
 				F65B2E0E28169E3C00DB42A3 /* AppUser.swift in Sources */,
+				F67A377D282A498F002F25DA /* MessageViewModel.swift in Sources */,
 				F6477C352816E1730055D800 /* ImagePickerReprsentable.swift in Sources */,
 				F65B2E0C28169D6B00DB42A3 /* UserViewModel.swift in Sources */,
 				F65B2E022816837700DB42A3 /* settingsView.swift in Sources */,
+				F6A4B9672817F56A0032D6CB /* ContactListView.swift in Sources */,
+				F69E44B2282A637D0002A42D /* MessageEditing.swift in Sources */,
 				F6318252280EDECC00A8E1D0 /* authViewModel.swift in Sources */,
+				F67A377B282A46AA002F25DA /* Message.swift in Sources */,
 				F65B2E042816895000DB42A3 /* Avatar.swift in Sources */,
 				F6318238280ED81E00A8E1D0 /* ContentView.swift in Sources */,
 				F6318236280ED81E00A8E1D0 /* chatAppApp.swift in Sources */,
+				F6A4B9652817EDD40032D6CB /* AllUsersViewModel.swift in Sources */,
 				F65B2E002816818500DB42A3 /* HomeTabView.swift in Sources */,
 				F65B2E082816908600DB42A3 /* settingsRow.swift in Sources */,
 				F6477C372816E18E0055D800 /* PHPPickerRepresentable.swift in Sources */,
+				F6A4B9692817FC640032D6CB /* ContactViewRow.swift in Sources */,
 				F65B2E06281689DB00DB42A3 /* RemplcamentAvatar.swift in Sources */,
 				F631824F280EDC7600A8E1D0 /* FirebaseManger.swift in Sources */,
 				F6318254280F014200A8E1D0 /* FirebaseConstant.swift in Sources */,
@@ -390,6 +420,7 @@
 				DEVELOPMENT_TEAM = AYQKWKQJL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chatApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "prendre un photo";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "accéder aux photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -421,6 +452,7 @@
 				DEVELOPMENT_TEAM = AYQKWKQJL2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chatApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "prendre un photo";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "accéder aux photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

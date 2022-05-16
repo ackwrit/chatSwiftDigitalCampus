@@ -23,7 +23,7 @@ struct ContentView: View {
             }
         }
         else{
-            Text("En attente de connexion")
+            Text("WAIT")
         }
     }
 }

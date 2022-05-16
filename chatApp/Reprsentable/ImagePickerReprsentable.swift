@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct ImagePickerRepresentable : UIViewRepresentable{
+struct ImagePickerRepresentable : UIViewControllerRepresentable{
     @Environment(\.presentationMode) var isPres
     let image : (UIImage?)-> Void
    
@@ -25,18 +25,20 @@ struct ImagePickerRepresentable : UIViewRepresentable{
         ImagePickerCoordinator(image: image, dismiss: dismiss)
     }
     
-    func makeUIView(context: Context) -> some UIView {
+    func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
-        picker.sourceType = .camera
-        picker.allowsEditing = false
-        picker.delegate = context.coordinator
-        return picker as? UIView ?? UIView()
-        
+               picker.sourceType = .camera
+              picker.allowsEditing = false
+              picker.delegate = context.coordinator
+               return picker
     }
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        print("Mise à jour photos")
+    
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
+        print("Mise à jour phtos")
     }
+    
+
     
 }
 
@@ -54,7 +56,7 @@ class ImagePickerCoordinator : NSObject ,UIImagePickerControllerDelegate, UINavi
     
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss()
+        self.dismiss()
     }
     
     
@@ -62,7 +64,7 @@ class ImagePickerCoordinator : NSObject ,UIImagePickerControllerDelegate, UINavi
         if let new = info[.originalImage] as? UIImage {
             self.image(new)
         }
-        dismiss()
+        self.dismiss()
         
         
     }

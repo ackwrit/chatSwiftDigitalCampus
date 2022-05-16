@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeTabView: View {
     @StateObject var userVm : UserViewModel = UserViewModel.init(id: FirebaseManager.shared.myId())
+    @StateObject var all = AllUsersViewModel()
     
     @State var index : Int = 0
     var body: some View {
@@ -17,13 +18,13 @@ struct HomeTabView: View {
                 Text("Message")
                 Image(systemName: "message.fill")
             }.tag(0)
-            Text("Listes des utilisateurs").tabItem {
+            ContactListView(allUsersVm: all).tabItem {
                 Text("Contacts")
                 Image(systemName: "person.circle.fill")
             }.tag(1)
             
             settingsView(userVm: userVm).tabItem {
-                Text("Réglages")
+                Text("SETTINGS")
                 Image(systemName: "gear")
             }.tag(2)
         }
