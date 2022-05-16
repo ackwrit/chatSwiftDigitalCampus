@@ -12,7 +12,7 @@ struct ContactViewRow: View {
     var body: some View {
         
         NavigationLink {
-            ChatMessage(dest: user)
+            ChatMessage(MessageVM: MessageViewModel(dest: user))
         } label: {
             HStack(alignment: .center) {
                 //Avatar

@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ChatMessage: View {
     var scrollId = "ScrollId"
-    @StateObject var MessageVM = MessageViewModel()
-    var dest: AppUser
+    @StateObject var MessageVM : MessageViewModel
     var body: some View {
         NavigationView {
             ScrollView {
@@ -29,9 +28,9 @@ struct ChatMessage: View {
             }
            
         }
-        .navigationTitle(dest.fullName)
+        .navigationTitle(MessageVM.dest!.fullName)
         .safeAreaInset(edge: .bottom) {
-            MessageEditing(messageVm: MessageVM, destinataire: dest)
+            MessageEditing(messageVm: MessageVM)
         }
         
     }
@@ -40,8 +39,4 @@ struct ChatMessage: View {
 
 }
 
-struct ChatMessage_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatMessage(dest: AppUser(id: "", dict: [:]))
-    }
-}
+

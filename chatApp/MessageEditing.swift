@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MessageEditing: View {
     @StateObject var messageVm : MessageViewModel
-    var destinataire : AppUser
     @FocusState var shouldFocus : Bool
     @State var mess : String = ""
     var body: some View {
@@ -24,7 +23,7 @@ struct MessageEditing: View {
                 .frame(height: 40)
             Button {
                 //Envoyer message
-                messageVm.sendMessageWithModelMessage(user: destinataire)
+                messageVm.sendMessageWithModelMessage()
                 
             } label: {
                 Image(systemName: "paperplane")

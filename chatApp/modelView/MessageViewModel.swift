@@ -12,9 +12,10 @@ class MessageViewModel : ObservableObject{
     @Published var messages : [Message] = []
     @Published var text = ""
     var manager = FirebaseManager.shared
+    var dest : AppUser?
     
-    init(){
-       AllMessage()
+    init(dest : AppUser?){
+        self.dest = dest
     }
     func AllMessage() {
         manager.messageRef.addSnapshotListener(snapshotListener)
@@ -45,10 +46,10 @@ class MessageViewModel : ObservableObject{
     }
     
     
-    func sendMessageWithModelMessage(user : AppUser){
+    func sendMessageWithModelMessage(){
         guard self.text != "" else {return }
-        let  dict = createDict(exp: manager.myId(), dest: user.id)
-        manager.sendMessage(exp: manager.myId(), dest: user.id, datas: dict)
+        let  dict = createDict(exp: manager.myId(), dest: self.dest!.id)
+        manager.sendMessage(exp: manager.myId(), dest: self.dest!.id, datas: dict)
         self.text = ""
         
     }
