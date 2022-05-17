@@ -16,15 +16,20 @@ class MessageViewModel : ObservableObject{
     
     init(dest : AppUser?){
         self.dest = dest
+        getMessage()
     }
-    func AllMessage() {
-        manager.messageRef.addSnapshotListener(snapshotListener)
-    }
+   
     
     func getMessage(){
-        _ = manager.myId()
+        let myId = manager.myId()
+        let userId = self.dest?.id
+        let ref = manager.setupPath(exp: myId, dest: userId!)
+        ref .order(by: ENVOI)
+            .addSnapshotListener(snapshotListener)
         
     }
+    
+    
     
     
     func snapshotListener(query : QuerySnapshot?, errors : Error?){

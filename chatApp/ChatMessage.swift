@@ -17,13 +17,23 @@ struct ChatMessage: View {
                     //Afficher les messages
                     VStack {
                         ForEach(MessageVM.messages) { mess in
-                            Text(mess.text)
+                            chatBubble(message: mess)
+                            //Text(mess.text)
+                            
+                                
                         }
+                        .padding(EdgeInsets(top: 10, leading: 8, bottom: 10, trailing: 8))
                     }
                     HStack {
                         Spacer()
                     }
                     .id(scrollId)
+                    .onReceive(MessageVM.$messages.count()) { output in
+                        withAnimation {
+                            proxy.scrollTo(scrollId, anchor: .bottom)
+                        }
+                        
+                    }
                 }
             }
            

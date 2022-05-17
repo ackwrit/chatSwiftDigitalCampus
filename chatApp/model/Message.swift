@@ -13,6 +13,7 @@ struct Message : Identifiable {
     var destinataire : String
     var text : String
     var envoi : Double
+    var urlImage :String?
     
     init(id : String, data:[String:Any]){
         self.id = id
